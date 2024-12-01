@@ -1,0 +1,15 @@
+{
+  "name": "crypto-task-final",
+  "version": "1.0.0",
+  "description": "This project is part of the Cryptology course. It includes DSA cipher implemented in TypeScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}
