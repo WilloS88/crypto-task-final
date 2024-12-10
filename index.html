@@ -1,13 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DSA Cipher</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <div>test</div>
-</body>
-<script src="./dist/app.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./assets/favicon.svg" />
+    <title>Digital Signature Algorithm</title>
+  </head>
+  <body>
+    <h1 class="header">
+      DSA <img id="keyIcon" src="./assets/key.svg" alt="Key Icon" />
+    </h1>
+    <div class="layout">
+      <div class="box">
+        <div class="key-section">
+          <h2>Key Pair</h2>
+          <button id="generate-keys">Generate Keys</button>
+          <div class="key-display">
+            <div>
+              <h3>Public Key (n, e):</h3>
+              <p id="public-key"></p>
+            </div>
+            <div>
+              <h3>Private Key (n, d):</h3>
+              <p id="private-key"></p>
+            </div>
+          </div>
+          <button id="export-keys">Export Keys</button>
+        </div>
+
+        <div class="inputs">
+          <div class="inputs-file">
+            <div>
+              <p>Choose Input file:</p>
+              <input type="file" id="input-file"/>
+              <div id="fileDetails">
+                <ul id="detailsList"></ul>
+              </div>
+            </div>
+            <div>
+              <p>Public key file:</p>
+              <input type="file" id="pub-key-file"/>
+            </div>
+            <div>
+              <p>ZIP File:</p>
+              <input type="file" id="zip-file"/>
+            </div>
+          </div>
+          <div class="inputs-buttons">
+            <button id="encrypt-hash">Encrypt Hash</button>
+            <button id="create-signed-zip">Create a ZIP file with Signed File</button>
+            <button id="verify-signature">Verify Signature</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha3/0.8.0/sha3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="./dist/app.js"></script>
+  </body>
 </html>

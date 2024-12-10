@@ -1,4 +1,198 @@
-*{
-  padding: 0;
+* {
   margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(0deg, #c5c5c5 0%, #5a97f2 50%, #3e3eea 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px;
+  overflow: auto;
+}
+
+#keyIcon {
+  width: 50px;
+  height: 50px;
+}
+
+button {
+  cursor: pointer;
+  background: #3e3b41;
+  color: white;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #5a97f2;
+}
+
+button:active {
+  background: #373638;
+}
+
+.header {
+  background-color: #e7e7e7;
+  display: flex;
+  text-align: center;
+  font-size: 50px;
+  font-family: "Courier New", Courier, monospace;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 10px;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+h1 {
+  background-color: #e7e7e7;
+  font-style: italic;
+  font-family: monospace;
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+
+.layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e7e7e7;
+  margin: 20px 0px 20px 0px;
+  padding: 25px;
+  border-radius: 5px;
+  width: 800px;
+  margin: 10px;
+  box-shadow: 0px 0px 16px rgba(255, 255, 255, 0.2);
+  height: 700px;
+  width: 1200px;
+}
+
+.key-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#public-key, #private-key {
+  max-width: 500px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.key-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  padding-top: 10px;
+}
+
+.inputs {
+  display: flex;
+  gap: 10px;
+}
+
+.inputs label {
+  font-weight: bold;
+}
+
+.inputs-subclass {
+  display: flex;
+  flex-direction: column;
+}
+
+#output {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  resize: none;
+  width: 300px;
+  height: 120px;
+  margin-bottom: 5px;
+}
+
+.encrypt-button,
+.decrypt-button,
+#generate-keys,
+#export-keys,
+#process-button {
+  font-weight: bold;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  max-width: 120px;
+}
+
+
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.inputs{
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  min-width: 599px;
+}
+
+.inputs-file{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.inputs-file p, input {
+  size: 50px;
+  font-size: 20px;
+}
+
+.inputs-buttons{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.inputs-buttons button {
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px 0px 5px 0px;
+
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  
 }

@@ -11,5 +11,11 @@
   "license": "ISC",
   "devDependencies": {
     "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "BigInt": "^5.5.3",
+    "crypto-js": "^4.2.0",
+    "jszip": "^3.10.1",
+    "sha3": "^2.1.4"
   }
 }
